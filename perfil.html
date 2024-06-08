@@ -11,7 +11,7 @@
     <header>
         <div class="container">
             <h1>Meu Perfil</h1>
-            <button id="feedbackButton">Feedback</button> 
+            <button id="feedbackButton">Feedback</button>
         </div>
     </header>
     <div class="content">
@@ -28,7 +28,7 @@
             <section class="profile-section">
                 <div class="profile-header">
                     <img src="foto_perfil.png" alt="Foto de Perfil" class="profile-picture">
-                    <h2>Nome do Usuário</h2>
+                    <h2 id="usernameDisplay">Nome do Usuário</h2>
                 </div>
                 <div class="profile-details">
                     <p><strong>Email:</strong> usuario@gmail.com</p>
@@ -48,6 +48,17 @@
             </form>
         </div>
     </div>
+    <script src="scripts.js"></script>
     <script src="script.js"></script>
+    <script src="scriptlogin.js"></script>
+    <script>
+        // Código para atualizar o nome do usuário
+        document.addEventListener('DOMContentLoaded', function() {
+            var storedUsername = localStorage.getItem('username');
+            if (storedUsername) {
+                document.getElementById('usernameDisplay').textContent = storedUsername;
+            }
+        });
+    </script>
 </body>
 </html>
