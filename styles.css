@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -9,7 +10,7 @@ body {
 
 header {
     background-color: #007bff;
-    padding: 10px 0;
+    padding: 6px 0;
     color: white;
     text-align: center;
 }
@@ -45,14 +46,14 @@ header h1 {
 
 .search-box form {
     display: flex;
-    border-radius: 45px;
+    border-radius: 50px;
     background-color: #4c4c4c;
     height: 45px;
 }
 
 .search-box:hover .search-box-input {
-    padding-left: 2em;
-    padding-right: 1em;
+    padding-left: 0.9em;
+    padding-right: 0em;
     width: 250px;
 }
 
@@ -69,7 +70,7 @@ header h1 {
 
 .search-box-button {
     display: flex;
-    border-radius: 45%;
+    border-radius: 45%; 
     width: 45px;
     height: 45px;
     background-color: #14c0c7;
@@ -93,6 +94,7 @@ header h1 {
     }
 }
 
+/* Layout principal */
 .content {
     display: flex;
     flex: 1;
@@ -139,4 +141,98 @@ header .container {
     margin: 0 auto;
     padding: 0 20px;
     margin-left: 270px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.feedback-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-content {
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #555;
+}
+
+.feedback-content h2 {
+    margin-top: 0;
+}
+
+.feedback-content form {
+    margin-top: 20px;
+}
+
+.feedback-content textarea {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.feedback-content button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback-content button:hover {
+    background-color: #0056b3;
+}
+
+
+#feedbackButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#feedbackButton:hover {
+    background-color: #0056b3;
+}
+
+#feedbackButton {
+    position: absolute;
+    right: 20px; 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#feedbackButton:hover {
+    background-color: #0056b3;
 }
