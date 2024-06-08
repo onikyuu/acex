@@ -38,13 +38,10 @@ header h1 {
     opacity: 0.6;
 }
 
-/* Chrome, Opera e Safari */
 .search-box-input::-webkit-input-placeholder { color: #ffffff; }
 
-/* Firefox 19+ */
 .search-box-input::-moz-placeholder { color: #ffffff; }
 
-/* IE 10+ e Edge */
 .search-box-input:-ms-input-placeholder { color: #ffffff; }
 
 .search-box form {
