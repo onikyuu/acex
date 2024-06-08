@@ -10,6 +10,7 @@
     <header>
         <div class="container">
             <h1>Configurações</h1>
+            <button id="feedbackButton">Feedback</button> 
         </div>
     </header>
     <div class="content">
@@ -28,6 +29,16 @@
             </section>
         </main>
     </div>
-    <script src="scripts.js"></script>
+    <div id="feedbackForm" class="feedback-form">
+        <div class="feedback-content">
+            <span class="close-button" id="closeButton">&times;</span>
+            <h2>Deixe seu Feedback</h2>
+            <form>
+                <textarea placeholder="Digite seu feedback aqui..." rows="4"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
