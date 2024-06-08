@@ -1,4 +1,3 @@
-// Script para o login
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
