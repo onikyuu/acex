@@ -11,6 +11,7 @@
     <header>
         <div class="container">
             <h1>Meu Perfil</h1>
+            <button id="feedbackButton">Feedback</button> 
         </div>
     </header>
     <div class="content">
@@ -30,12 +31,23 @@
                     <h2>Nome do Usuário</h2>
                 </div>
                 <div class="profile-details">
-                    <p><strong>Email:</strong> usuario@gmail.com</p>
+                    <p><strong>Email:</strong> usuario@example.com</p>
                     <p><strong>Telefone:</strong> (11) 1234-5678</p>
-                    <p><strong>Endereço:</strong> Rua, 123, Cidade, Estado</p>
+                    <p><strong>Endereço:</strong> Rua Exemplo, 123, Cidade, Estado</p>
                 </div>
             </section>
         </main>
     </div>
+    <div id="feedbackForm" class="feedback-form">
+        <div class="feedback-content">
+            <span class="close-button" id="closeButton">&times;</span>
+            <h2>Deixe seu Feedback</h2>
+            <form>
+                <textarea placeholder="Digite seu feedback aqui..." rows="4"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
