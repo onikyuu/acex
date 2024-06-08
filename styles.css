@@ -93,7 +93,6 @@ header h1 {
     }
 }
 
-/* Layout principal */
 .content {
     display: flex;
     flex: 1;
