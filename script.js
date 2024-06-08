@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
             img: "passo2.jpg",
             text: "Texto relacionado à Imagem 2."
         }
-        // Adicione mais objetos conforme necessário
+        //
     ];
 
     const imageElement = document.getElementById("image");
