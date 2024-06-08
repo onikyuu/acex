@@ -1,3 +1,4 @@
+
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -12,7 +13,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     }
 });
 
-// Script para a página inicial
+
 document.getElementById('home').addEventListener('click', function(event) {
     event.preventDefault();
     showSection('home-section');
