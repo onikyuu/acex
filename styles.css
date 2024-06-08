@@ -69,7 +69,7 @@ header h1 {
 
 .search-box-button {
     display: flex;
-    border-radius: 50%;
+    border-radius: 45%;
     width: 45px;
     height: 45px;
     background-color: #14c0c7;
