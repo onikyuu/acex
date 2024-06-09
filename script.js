@@ -16,27 +16,27 @@ document.addEventListener("DOMContentLoaded", function() {
     const data = [
         {
             img: "branco.png",
-            text: "Ao acessar o software iModulo iMonitoramento, faça o login e acesse o menu de configurações"
+            text: "1. Ao acessar o software iModulo iMonitoramento, faça o login e acesse o menu de configurações"
         },
         {
             img: "passo1.jpg",
-            text: "Dentro das configurações, clique na opção de Cadastro, localizada no canto superior esquerdo, após isso, clique em Dispositivos"
+            text: "2. Dentro das configurações, clique na opção de Cadastro, localizada no canto superior esquerdo, após isso, clique em Dispositivos"
         },
         {
             img: "passo2.jpg",
-            text: "Agora, abaixo de Inserir novo dispositivo, em Tipo, selecione CT - Cartão e Chaveiro"
+            text: "3.Agora, abaixo de Inserir novo dispositivo, em Tipo, selecione CT - Cartão e Chaveiro"
         },
         {
             img: "passo3.jpg",
-            text: "Preencha os campos solicitados com as informações do chaveiro TAG, como número de série, ID ou qualquer outro identificador específico do dispositivo. Sendo necessário o uso de uma leitora ou inserir a numeração existente na tag manualmente;<br><br> É necessário vincular o chaveiro a um usuário específico. Nesse caso, selecione o usuário ao qual o chaveiro será vinculado;<br><br> Defina as permissões ou acessos que o chaveiro terá. Isso pode incluir áreas específicas que o usuário poderá acessar ou horários permitidos. - SEMPRE OPÇÃO REMOTO EM CASO DE NÃO ESTAR NO LOCAL;<br><br>Após preencher todos os dados e configurar as permissões, salve as informações para registrar o chaveiro TAG no sistema."
+            text: "4. Preencha os campos solicitados com as informações do chaveiro TAG, como número de série, ID ou qualquer outro identificador específico do dispositivo.<br>Sendo necessário o uso de uma leitora ou inserir a numeração existente na tag manualmente;<br><br>5. É necessário vincular o chaveiro a um usuário específico. Nesse caso, selecione o usuário ao qual o chaveiro será vinculado;<br><br>6. Defina as permissões ou acessos que o chaveiro terá. Isso pode incluir áreas específicas que o usuário poderá acessar ou horários permitidos.<br>SEMPRE OPÇÃO REMOTO EM CASO DE NÃO ESTAR NO LOCAL;<br><br>7. Após preencher todos os dados e configurar as permissões, salve as informações para registrar o chaveiro TAG no sistema."
         },
         {
             img: "passo4.jpg",
-            text: "Realize um teste para garantir que o chaveiro TAG foi cadastrado corretamente e está funcionando conforme esperado.<br><br>Verifique se o usuário pode acessar as áreas permitidas usando o chaveiro TAG."
+            text: "8. Realize um teste para garantir que o chaveiro TAG foi cadastrado corretamente e está funcionando conforme esperado.<br><br>9. Verifique se o usuário pode acessar as áreas permitidas usando o chaveiro TAG."
         },
         {
             img: "passo5.jpg",
-            text: "Confirme que todas as configurações estão corretas e finalize o processo de cadastramento."
+            text: "10. Confirme que todas as configurações estão corretas e finalize o processo de cadastramento."
         }
     ];
 
