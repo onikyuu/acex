@@ -33,12 +33,28 @@
                     <h2 id="usernameDisplay">Nome do Usuário</h2>
                 </div>
                 <div class="profile-details">
-                    <p><strong>Email:</strong> usuario@gmail.com</p>
-                    <p><strong>Telefone:</strong> (11) 1234-5678</p>
-                    <p><strong>Endereço:</strong> Rua, 123, Cidade, Estado</p>
+                    <p><strong>Email:</strong> <span id="userEmail">usuario@gmail.com</span></p>
+                    <p><strong>Telefone:</strong> <span id="userPhone">(11) 1234-5678</span></p>
+                    <p><strong>Endereço:</strong> <span id="userAddress">Rua, 123, Cidade, Estado</span></p>
+                    <button id="editButton">Editar Informações</button>
                 </div>
             </section>
         </main>
+    </div>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeEditModal">&times;</span>
+            <h2>Editar Informações</h2>
+            <form id="editForm">
+                <label for="editEmail">Email:</label>
+                <input type="email" id="editEmail" name="email" required>
+                <label for="editPhone">Telefone:</label>
+                <input type="text" id="editPhone" name="phone" required>
+                <label for="editAddress">Endereço:</label>
+                <input type="text" id="editAddress" name="address" required>
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
     </div>
     <div id="feedbackForm" class="feedback-form">
         <div class="feedback-content">
@@ -54,12 +70,50 @@
     <script src="script.js"></script>
     <script src="scriptlogin.js"></script>
     <script>
-        // Código para atualizar o nome do usuário
+        // Código para atualizar informações
         document.addEventListener('DOMContentLoaded', function() {
             var storedUsername = localStorage.getItem('username');
             if (storedUsername) {
                 document.getElementById('usernameDisplay').textContent = storedUsername;
             }
+
+            var storedEmail = localStorage.getItem('userEmail');
+            var storedPhone = localStorage.getItem('userPhone');
+            var storedAddress = localStorage.getItem('userAddress');
+            if (storedEmail) {
+                document.getElementById('userEmail').textContent = storedEmail;
+            }
+            if (storedPhone) {
+                document.getElementById('userPhone').textContent = storedPhone;
+            }
+            if (storedAddress) {
+                document.getElementById('userAddress').textContent = storedAddress;
+            }
+
+            document.getElementById('editButton').addEventListener('click', function() {
+                document.getElementById('editModal').style.display = 'block';
+                document.getElementById('editEmail').value = document.getElementById('userEmail').textContent;
+                document.getElementById('editPhone').value = document.getElementById('userPhone').textContent;
+                document.getElementById('editAddress').value = document.getElementById('userAddress').textContent;
+            });
+
+            document.getElementById('closeEditModal').addEventListener('click', function() {
+                document.getElementById('editModal').style.display = 'none';
+            });
+
+            document.getElementById('editForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                var newEmail = document.getElementById('editEmail').value;
+                var newPhone = document.getElementById('editPhone').value;
+                var newAddress = document.getElementById('editAddress').value;
+                localStorage.setItem('userEmail', newEmail);
+                localStorage.setItem('userPhone', newPhone);
+                localStorage.setItem('userAddress', newAddress);
+                document.getElementById('userEmail').textContent = newEmail;
+                document.getElementById('userPhone').textContent = newPhone;
+                document.getElementById('userAddress').textContent = newAddress;
+                document.getElementById('editModal').style.display = 'none';
+            });
         });
     </script>
 </body>
