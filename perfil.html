@@ -37,6 +37,7 @@
                     <p><strong>Telefone:</strong> <span id="userPhone">(11) 1234-5678</span></p>
                     <p><strong>Endereço:</strong> <span id="userAddress">Rua, 123, Cidade, Estado</span></p>
                     <button id="editButton">Editar Informações</button>
+                    <button id="logoutButton">Sair</button>
                 </div>
             </section>
         </main>
@@ -114,6 +115,8 @@
                 document.getElementById('userAddress').textContent = newAddress;
                 document.getElementById('editModal').style.display = 'none';
             });
+                document.getElementById('logoutButton').addEventListener('click', function() {
+                    window.location.href = 'index.html';
         });
     </script>
 </body>
